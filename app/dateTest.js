@@ -1,9 +1,9 @@
-const newDate = new Date();
-const newDateFromInput = new Date('2019-10-10 08:35:38.504135+00');
-const newDateFromInputOffset = newDateFromInput.getTimezoneOffset();
-const doubleDate = new Date(newDateFromInput);
+const moment = require('moment');
 
-console.log(newDate);
-console.log(newDateFromInput);
-console.log(newDateFromInputOffset);
-console.log(doubleDate);
+const dateJS = new Date();
+console.log(dateJS);
+
+dateJS.setMinutes(dateJS.getMinutes() -5);
+const result = dateJS.toISOString();
+console.log(result);
+
