@@ -12,4 +12,4 @@ create table table_one
   advance_requested_amount      numeric(9, 2),
   created                       datetime2(6),
 )
-go
+gow
